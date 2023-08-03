@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+<div class="container my-2">
+  <h1 class="text-center">Add product</h1>
+<label for="productName" class="text-muted">productName:</label>
+<input type="text" id="productName" class="form-control my-2">
+<label for="productPrice" class="text-muted">productPrice:</label>
+<input type="text" id="productPrice" class="form-control my-2">
+<label for="productCatageroy" class="text-muted">productCatageroy:</label>
+<input type="text" id="productCatageroy" class="form-control my-2">
+<label for="productDescription" class="text-muted">productDescription:</label>
+<input type="text" id="productDescription" class="form-control my-2">
+<label for="productsearch" class="text-muted">productsearch:</label>
+<input type="text" id="productsearch" class="form-control my-2" onkeyup="search(this.value)">
+<button class="btn btn-outline-primary d-block" onclick="add()" id="add"> Add product</button>
+<button class="btn btn-outline-success d-none" id="update" onclick="sendupdate()"> update</button>
+<table>
+  <thead>
+  <td class="pe-5">id</td>
+  <td class="pe-5">projectname</td>
+  <td class="pe-5">price</td>
+  <td class="pe-5">catageroy</td>
+  <td class="pe-5">description</td>
+  <td class="pe-5">action</td>
+  <td class="pe-5">restert</td>
+</thead>
+<tbody id="tbody"></tbody>
+</table>
+</div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/ndex.js"></script>
+</body>
+
+</html>
